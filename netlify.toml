@@ -1,0 +1,14 @@
+# netlify.toml - Configuration for Netlify Deployment
+
+[build]
+  publish = "/"          # Root folder since static HTML
+  command = ""           # No build command needed for static HTML/CSS/JS
+
+[dev]
+  port = 8888            # Local development port
+  publish = "/"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
